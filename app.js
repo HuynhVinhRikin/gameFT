@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 app.get('/login', (req, res) => {
 });
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+app.listen(PORT,'0.0.0.0', () => {
     console.log(`Our app is running on port ${ PORT }`);
 });
 
@@ -121,7 +121,7 @@ io
         arrayConnected.pop(socketID);
   });
 });
-server.listen(3000);
+server.listen(process.env.PORTWB || 3000, '0.0.0.0');
 
 // let dataOrigin = {`
 //     name: 'Carot',
