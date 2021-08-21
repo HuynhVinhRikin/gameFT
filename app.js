@@ -23,8 +23,11 @@ app.get('/', (req, res) => {
 });
 app.get('/login', (req, res) => {
 });
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
 
-app.listen(5000, () => console.log(`server start at port 5000`));
 
 let arrayConnected = [];
 const io = require('socket.io')(server);
