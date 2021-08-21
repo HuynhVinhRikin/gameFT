@@ -1,8 +1,6 @@
 var userID = Math.random() * 10
 
-const socket = io(`https://rikin-f-f.herokuapp.com?token=${userID}`,{
-  transports: ['websocket']
-});
+const socket = io(`https://rikin-f-f.herokuapp.com?token=${userID}`);
 function hello(){
   console.log("dayyy nè")
 }
