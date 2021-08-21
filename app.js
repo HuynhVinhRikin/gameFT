@@ -19,12 +19,12 @@ app.get('/game', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    res.render('game')
+    res.json('HELLO THIS IS HUYNH VINH')
 });
 app.get('/login', (req, res) => {
 });
 
-app.listen(3001, () => console.log(`server start at port 3000`));
+app.listen(5000, () => console.log(`server start at port 5000`));
 
 let arrayConnected = [];
 const io = require('socket.io')(server);
