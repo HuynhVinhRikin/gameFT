@@ -26,7 +26,7 @@ app.get('/login', (req, res) => {
 const PORT = process.env.PORT || 5000;
 const HOST = process.env.PORT || '0.0.0.0';
 
-app.listen(PORT,HOST, () => {
+app.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
 });
 
@@ -123,8 +123,9 @@ io
         arrayConnected.pop(socketID);
   });
 });
-let portWB = process.env.PORTWB
-server.listen(portWB || 3000, HOST, () => {
+let portWB = process.env.PORTWB;
+
+server.listen(portWB || 3000, HOST || '0.0.0.0', () => {
     console.log(`Our app is running on port ${ portWB }`);
 });
 
