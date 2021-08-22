@@ -125,8 +125,8 @@ io
 });
 let portWB = process.env.PORTWB;
 
-server.listen(portWB , () => {
-    console.log(`Our app is running on port ${ portWB }`);
+server.listen(PORT , () => {
+    console.log(`Our app is running on port ${ PORT }`);
 });
 
 // let dataOrigin = {`
