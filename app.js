@@ -19,7 +19,7 @@ app.get('/game', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    res.json('HELLO THIS IS HUYNH VINH')
+    res.render('./meet-me-opl/home')
 });
 app.get('/login', (req, res) => {
 });
